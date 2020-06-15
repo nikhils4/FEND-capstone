@@ -38,6 +38,11 @@ For testing run,
 ```
 npm run test
 ```
+## Environment variables
+
+- USERNAME=<>
+- WEATHER_KEY=<>
+- PIXABAY_KEY=<>
 
 ## Built With
 
