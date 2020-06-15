@@ -1,0 +1,101 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rochester&display=swap');
+
+$content-font: 'Open Sans', sans-serif;
+$heading-font: 'Rochester', cursive;
+
+body {
+	background: url('../media/background.jpg');
+	background-size: cover;
+	overflow: scroll;
+}
+html {
+	overflow: scroll;
+}
+nav {
+	position: absolute;
+	background-color: rgba(255, 255, 255, .15);  
+	backdrop-filter: blur(5px);
+	text-align: center;
+	li {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	li:last-child {
+		margin-right: 50px;
+	}
+}
+
+.row {
+	#main-heading-container{
+		margin-top: 150px;
+		margin-bottom: 100px;
+		text-align: center;
+		h1 {
+			font-family: $heading-font;
+			font-size: 45px;
+			font-weight: bolder;
+		}
+	}
+
+	#btn-container{
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 100px;
+		background-color: transparent !important;
+		button {
+			width : 40%;
+		}
+	}
+}
+
+#form-container {
+	padding-left : 20px;
+	padding-right : 20px;
+	.col-12 {
+		border-radius: 5px;
+		text-align: center;
+		background-color: rgba(255, 255, 255, .4);  
+		backdrop-filter: blur(5px);
+		padding: 15px;
+		label {
+			font-weight: bolder;
+			font-size: 1.1em
+		}
+
+		input {
+			padding: 15px;
+			border-radius : 5px;
+			outline: none;
+			border: none;
+			width: 80%;
+		}
+	}
+}
+
+#modal-launch {
+	display: none;
+}
+
+#status {
+	color : red;
+	font-weight: bolder;
+	font-size: 16px;
+	height: 15px;
+}
+
+#modal-img {
+	width: 100%;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+.modal-body{
+	p{
+		font-weight: bolder;
+		span{
+			font-weight: lighter;
+		}
+	}
+}
